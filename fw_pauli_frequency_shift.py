@@ -1,9 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# =============================================
-# DATA FROM YOUR EQUATIONS (ADJUST NUMBERS IF NEEDED)
-# =============================================
 
 # Magnetic field values (Tesla) - from your Section 4.5
 B0 = np.array([1, 3, 7, 10])
@@ -30,7 +27,6 @@ fw_line, = plt.plot(B0, delta_omega_FW, 'b-', marker='o', markersize=8,
 pauli_line, = plt.plot(B0, delta_omega_Pauli, 'r--', marker='s', markersize=8,
                        linewidth=2, label='Pauli Approximation (Eq. 4.123)')
 
-# Add YOUR equations directly on plot
 plt.text(6, 0.3, r'$\Delta\omega_{FW} = \frac{\gamma^2 B_z^3}{8c^2}$',
          fontsize=12, color='blue')
 plt.text(6, 0.15, r'$\Delta\omega_{Pauli} = \frac{\gamma B_0^2}{2m_p^2 c^2} \nabla B_z$',
@@ -59,7 +55,6 @@ plt.plot(TE, delta_phi_3T, 'b-o', label='3T', markersize=8, linewidth=2)
 plt.plot(TE, delta_phi_7T, 'r-s', label='7T', markersize=8, linewidth=2)
 plt.plot(TE, delta_phi_10T, 'g-^', label='10T', markersize=8, linewidth=2)
 
-# Add YOUR equation
 plt.text(60, 0.4, r'$\Delta\phi \approx \gamma B_z t \left(1 + \frac{\gamma^2 B_z^2}{8c^2}\right)$',
          fontsize=12, bbox=dict(facecolor='white', alpha=0.8))
 
